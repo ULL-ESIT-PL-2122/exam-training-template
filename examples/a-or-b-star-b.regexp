@@ -1,0 +1,5 @@
+a # Character 'a'
+| /* the OR */
+b 
+* /* 0 or more b's */
+b

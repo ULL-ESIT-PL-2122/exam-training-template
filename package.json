@@ -1,0 +1,30 @@
+{
+  "name": "@ull-esit-pl-2122/regexp-solution",
+  "version": "1.3.2",
+  "description": "Lab for language processors",
+  "main": "src/parse.js",
+  "bin": {
+    "regexpc": "bin/regexpc.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "scripts": {
+    "test": "npm run build; bin/regexpc.js -v examples/a-or-b.regexp",
+    "debug": "npm run build; node --inspect-brk bin/regexpc.js examples/a-or-b.regexp",
+    "build": "nearleyc src/regexp.ne -o src/grammar.js",
+    "diagram": "nearley-railroad src/regexp.ne -o docs/regexp-syntax-diagram.html",
+    "link-gen": "npm link @ull-esit-pl-2122/regexp-solution"
+  },
+  "keywords": [ "ULL", "language-processors", "exam", "AST" ],
+  "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
+  "license": "ISC",
+  "dependencies": {
+    "@ull-esit-pl-2122/lexer-generator-solution": "^4.1.2",
+    "commander": "^9.0.0"
+  },
+  "devDependencies": {
+    "nearley": "^2.20.1"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "ast": {
+    "type": "CAT",
+    "children": [
+      {
+        "type": "CAT",
+        "children": [
+          {
+            "type": "CHAR",
+            "value": "a"
+          },
+          {
+            "type": "STAR",
+            "children": [
+              {
+                "type": "DOT",
+                "value": "."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "CHAR",
+        "value": "b"
+      }
+    ]
+  },
+  "source": "a.*b",
+  "file": "examples/dot.regexp",
+  "output": "(?:(?:a.*)b)"
+}

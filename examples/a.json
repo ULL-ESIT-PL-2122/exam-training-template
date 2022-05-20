@@ -1,0 +1,9 @@
+{
+  "ast": {
+    "type": "CHAR",
+    "value": "a"
+  },
+  "source": "a",
+  "file": "examples/a.regexp",
+  "output": "a"
+}

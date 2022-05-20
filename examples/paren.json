@@ -1,0 +1,55 @@
+{
+  "ast": {
+    "type": "CAT",
+    "children": [
+      {
+        "type": "CAT",
+        "children": [
+          {
+            "type": "CAT",
+            "children": [
+              {
+                "type": "STAR",
+                "children": [
+                  {
+                    "type": "PAREN",
+                    "children": [
+                      {
+                        "type": "OR",
+                        "children": [
+                          {
+                            "type": "CHAR",
+                            "value": "a"
+                          },
+                          {
+                            "type": "CHAR",
+                            "value": "b"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "CHAR",
+                "value": "a"
+              }
+            ]
+          },
+          {
+            "type": "CHAR",
+            "value": "b"
+          }
+        ]
+      },
+      {
+        "type": "CHAR",
+        "value": "b"
+      }
+    ]
+  },
+  "source": "(a|b)*abb",
+  "file": "examples/paren.regexp",
+  "output": "(?:(?:(?:((?:a|b))*a)b)b)"
+}

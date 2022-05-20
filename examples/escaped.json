@@ -1,0 +1,22 @@
+{
+  "type": "CAT",
+  "children": [
+    {
+      "type": "CAT",
+      "children": [
+        {
+          "type": "CHAR",
+          "value": "a"
+        },
+        {
+          "type": "CHAR",
+          "value": "\\s"
+        }
+      ]
+    },
+    {
+      "type": "CHAR",
+      "value": "\\*"
+    }
+  ]
+}

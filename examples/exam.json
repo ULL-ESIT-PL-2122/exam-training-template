@@ -1,0 +1,37 @@
+{
+  "ast": {
+    "type": "OR",
+    "children": [
+      {
+        "type": "PLUS",
+        "children": [
+          {
+            "type": "PAREN",
+            "children": [
+              {
+                "type": "CAT",
+                "children": [
+                  {
+                    "type": "CHAR",
+                    "value": "a"
+                  },
+                  {
+                    "type": "CHAR",
+                    "value": "b"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "CHAR",
+        "value": "b"
+      }
+    ]
+  },
+  "source": "(ab)+|b",
+  "file": "examples/exam.regexp",
+  "output": "(?:((?:ab))+|b)"
+}

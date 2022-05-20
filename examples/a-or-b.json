@@ -1,0 +1,18 @@
+{
+  "ast": {
+    "type": "OR",
+    "children": [
+      {
+        "type": "CHAR",
+        "value": "a"
+      },
+      {
+        "type": "CHAR",
+        "value": "b"
+      }
+    ]
+  },
+  "source": "a # Character 'a'\n| /* the oR */\nb # Character 'b'",
+  "file": "examples/a-or-b.regexp",
+  "output": "(?:a|b)"
+}

@@ -1,0 +1,32 @@
+{
+  "ast": {
+    "type": "OR",
+    "children": [
+      {
+        "type": "CHAR",
+        "value": "a"
+      },
+      {
+        "type": "CAT",
+        "children": [
+          {
+            "type": "STAR",
+            "children": [
+              {
+                "type": "CHAR",
+                "value": "b"
+              }
+            ]
+          },
+          {
+            "type": "CHAR",
+            "value": "b"
+          }
+        ]
+      }
+    ]
+  },
+  "source": "a # Character 'a'\n| /* the OR */\nb \n* /* 0 or more b's */\nb",
+  "file": "examples/a-or-b-star-b.regexp",
+  "output": "(?:a|(?:b*b))"
+}
